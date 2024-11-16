@@ -1,0 +1,32 @@
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(20, 20, 20);
+  /* background-color: Transparent; */
+  height: 10vh;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+  background-color: black;
+}
+.nav_block {
+  background-color: rgb(20, 20, 20);
+}
+
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+}
+
+.header_left + 1 {
+  width: 100%;
+  display: flex;
+}

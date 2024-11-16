@@ -1,5 +1,7 @@
-.App
-*{
+.App {
+  /* background-color: rgb(175, 146, 146); */
+}
+* {
   margin: 0;
   padding: 0;
 }
