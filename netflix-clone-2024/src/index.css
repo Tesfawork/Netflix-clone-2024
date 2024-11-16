@@ -1,9 +1,9 @@
 .body {
-  import url from {'https: //fonts.googleapis.com/css2/family poppins'};
   
-  :root {
-    /* -- font-base: 'Legend', sans-serif; */
-    /* -- font-second-base: 'Inter' sans-serif; */
+  
+  root {
+    -- font-base: 'legend', sans-serif;
+    -- font-second-base: 'inter' sans-serif;
     --background-color: black;
     --primery-color: white;
     --secondary-color: pink;
@@ -11,7 +11,7 @@
 
   * {
     margin: 0;
-    pading: 0;
+    padding: 0;
     box-sizing: boarder-box;
   }
 

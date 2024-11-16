@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import url from 'https: //fonts.googleapis.com/css2/family poppins';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
