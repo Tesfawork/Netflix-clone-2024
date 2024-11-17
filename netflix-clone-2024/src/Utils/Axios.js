@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Instance = Axios.create = () => {
-    baseurl= "https://API.themovieDB.org/",
-    return (
-        <div>
-            
-        </div>
-    );
-}
+const Instance = (Axios.create = {
+  baseurl: "https://API.themovieDB.org/",
+});
 
 export default Instance;

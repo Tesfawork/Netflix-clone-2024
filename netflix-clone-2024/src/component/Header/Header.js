@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import NetflixLogo from "https://t1.gstatic.com/images?q=tbn:ANd9GcTDtWF5XSjCv2sKbO5Aq_L9UjMZ5_EFDrgkOdaMeCxo0eIRi979";
 import SearchIcon from "@mui/icons-material/Search";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import NotificationsIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
               <AccountBoxIcon />
             </li>
             <li>
-              <ArrowDropdownIcon />
+              <ArrowDropDownIcon />
             </li>
           </ul>
         </div>
