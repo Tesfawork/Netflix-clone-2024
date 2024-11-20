@@ -1,46 +1,54 @@
 import React from "react";
 import "./header.css";
-import NetflixLogo from "https://t1.gstatic.com/images?q=tbn:ANd9GcTDtWF5XSjCv2sKbO5Aq_L9UjMZ5_EFDrgkOdaMeCxo0eIRi979";
+import NetflixLogo from "../../asset/ay.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+
 const Header = () => {
+  const navItems = [
+    "Home",
+    "TV Shows",
+    "Movies",
+    "Latest",
+    "My List",
+    "Browse by Languages",
+  ];
+
   return (
-    <div>
-      <div className="header_outer_container"></div>
+    <header className="header">
       <div className="header_container">
         <div className="header_left">
-          <ul>
-            <li>
-              <img src="{NetflixLogo}" alt="Netflix Logo" width="100" />
-            </li>
-            <li>HOME</li>
-            <li>TV shows</li>
-            <li>Movies</li>
-            <li>Latest</li>
-            <li>Mylists</li>
-            <li>Browse by Languages</li>
-          </ul>
+          <img src={NetflixLogo} alt="Netflix Logo" className="header_logo" />
+          <nav>
+            <ul className="header_nav">
+              {navItems.map((item, index) => (
+                <li key={index} className="header_nav_item">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
         <div className="header_right">
-          <ul>
-            <li>
+          <ul className="header_icons">
+            <li title="Search">
               <SearchIcon />
             </li>
-            <li>
-              <NotificationIcon />
+            <li title="Notifications">
+              <NotificationsIcon />
             </li>
-            <li>
+            <li title="Account">
               <AccountBoxIcon />
             </li>
-            <li>
+            <li title="More Options">
               <ArrowDropDownIcon />
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
