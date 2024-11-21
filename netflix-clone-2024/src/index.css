@@ -1,21 +1,21 @@
-.body {
-  
-  
-  root {
-    -- font-base: 'legend', sans-serif;
-    -- font-second-base: 'inter' sans-serif;
-    --background-color: black;
-    --primery-color: white;
-    --secondary-color: pink;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: boarder-box;
-  }
+:root {
+  --font-base: "Poppins", sans-serif;
+  --font-second-base: "Inter", sans-serif;
+  --background-color: #111111;
+  --primary-color: white;
+  --secondary-color: pink;
+}
 
-  body {
-    background: color #111111;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
